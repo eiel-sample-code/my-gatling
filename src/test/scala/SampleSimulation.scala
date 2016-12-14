@@ -29,6 +29,7 @@ class SampleSimulation extends Simulation {
   val scn: ScenarioBuilder = scenario("Simple Test")
       .forever {
         exec(http("root request").get(""))
+          .pause(conf.pause)
       }
 
   setUp(
