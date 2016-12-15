@@ -9,4 +9,5 @@ sbt gatling:test \
   -Dgatling.application.baseUrl=http://${TARGET_ADDRESS} \
   -Dgatling.application.pasueTime=1ms \
   -Dgatling.application.rampUsers=50000 \
-  -Dgatling.application.duration=5m
+  -Dgatling.application.duration=5m \
+  > /dev/null
