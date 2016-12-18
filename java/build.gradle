@@ -1,5 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = 'com.example.HelloWorld'
 
 tasks.withType(JavaCompile) {
     sourceCompatibility = '1.8'
